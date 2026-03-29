@@ -1,5 +1,5 @@
 /* ========================================
-   Giulia Sales — Portfolio Website Styles
+   GENMIN Collective — Portfolio Website Styles
    ======================================== */
 
 /* --- Reset & Base --- */
@@ -245,6 +245,18 @@ a:hover {
   animation: fadeUp 1s ease 0.6s forwards;
 }
 
+.hero-tagline-sub {
+  font-size: clamp(0.85rem, 2vw, 1.05rem);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 253, 249, 0.7);
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 1s ease 0.8s forwards;
+}
+
 .hero-cta {
   display: inline-block;
   padding: 14px 36px;
@@ -301,6 +313,43 @@ a:hover {
 }
 
 .about-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Artistic Statement --- */
+.statement {
+  background-color: var(--color-bg-alt);
+}
+
+.statement-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.statement-content .section-title {
+  margin-bottom: 32px;
+}
+
+.statement-text p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.9;
+}
+
+.statement-text p:first-child::before {
+  content: '\201C';
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: var(--color-gold);
+  line-height: 0;
+  vertical-align: -0.5em;
+  margin-right: 4px;
+}
+
+.statement-text p:last-child {
   margin-bottom: 0;
 }
 
