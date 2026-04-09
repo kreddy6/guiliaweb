@@ -316,41 +316,84 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* --- Artistic Statement --- */
-.statement {
+/* --- Co-directors --- */
+.codirectors {
   background-color: var(--color-bg-alt);
 }
 
-.statement-content {
-  max-width: 800px;
-  margin: 0 auto;
+.codirectors .section-title {
+  margin-bottom: 56px;
 }
 
-.statement-content .section-title {
+.codirector {
+  border-top: 1px solid var(--color-gold-light);
+  padding-top: 48px;
+  margin-bottom: 56px;
+}
+
+.codirector:last-child {
+  margin-bottom: 0;
+}
+
+.codirector-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
   margin-bottom: 32px;
 }
 
-.statement-text p {
-  color: var(--color-text-light);
-  font-size: 1.05rem;
-  font-weight: 300;
-  margin-bottom: 20px;
-  font-style: italic;
-  line-height: 1.9;
-}
-
-.statement-text p:first-child::before {
-  content: '\201C';
+.codirector-name {
   font-family: var(--font-heading);
-  font-size: 3rem;
-  color: var(--color-gold);
-  line-height: 0;
-  vertical-align: -0.5em;
-  margin-right: 4px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
-.statement-text p:last-child {
-  margin-bottom: 0;
+.codirector-pronoun {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.codirector-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.codirector-bio h4,
+.codirector-statement h4 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+
+.codirector-bio p,
+.codirector-statement p {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.codirector-statement p {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .codirector-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .codirector-name {
+    font-size: 1.6rem;
+  }
 }
 
 /* --- Portfolio --- */
